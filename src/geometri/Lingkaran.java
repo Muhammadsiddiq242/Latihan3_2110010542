@@ -1,19 +1,18 @@
-
 package geometri;
-
 
 public class Lingkaran {
     
-      //membuat variabel
-  private double radius;  
+    private final double radius;  
+    
+    public Lingkaran(double radius) {
+        this.radius = radius;
+    }
+
+    public double hitungLuas() {
+        return Math.PI * Math.pow(radius, 2);
+    }
   
-    //membuat method luas
-  double setLuas(){
-      return Math.PI*Math.pow(radius,2);
-  }
-  
-     //membuat method keliling
-  double setKeliling(){
-      return 2*Math.PI*radius;
-  }
+    public double hitungKeliling() {
+        return 2 * Math.PI * radius;
+    }
 }
